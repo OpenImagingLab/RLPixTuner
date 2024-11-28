@@ -52,25 +52,22 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">PhoCoLens: Photorealistic and Consistent Reconstruction in Lensless Imaging</h1>
+            <h1 class="title is-1 publication-title">Goal Conditioned Reinforcement Learning for Photo Finishing Tuning</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="https://caixin98.github.io/" target="_blank">Xin Cai<sup>1,2</sup></a>,</span>
+                <a href="https://gnwekge78707.github.io/" target="_blank">Jiarui Wu<sup>1,2</sup></a>,</span>
                 <span class="author-block">
-                  <a href="https://zhiyuanyou.github.io/" target="_blank">Zhiyuan you<sup>1</sup></a>,
+                  <a href="https://" target="_blank">Yujin Wang<sup>1</sup></a>,
                 </span>
                 <span class="author-block">
-                  <a href="https://openreview.net/profile?id=~Hailong_Zhang1" target="_blank">Hailong Zhang<sup>3</sup></a>,</span>
+                  <a href="https://" target="_blank">Lingen Li<sup>1,2</sup></a>,</span>
               
                   <span class="author-block">
-                    <a href="https://scholar.google.com/citations?user=KZn9NWEAAAAJ&hl" target="_blank">Wentao Liu<sup>2,4</sup></a>,
+                    <a href="https://" target="_blank">Zhang Fan<sup>1</sup></a>,
                   </span>
                   <span class="author-block">
-                    <a href="https://www.gujinwei.org/" target="_blank">Jinwei Gu<sup>1</sup></a>,
-                  </span>
-                  <span class="author-block">
-                    <a href="https://tianfan.info/" target="_blank">Tianfan Xue<sup>1</sup></a>
+                    <a href="https://tianfan.info/" target="_blank">Tianfan Xue<sup>1,2</sup></a>
                   </span>
                   </div>
 
@@ -80,17 +77,17 @@
                         <span class="author-block">
                           <!-- <text >Xin Cai<sup>1,3</sup>, Hailong Zhang<sup>2</sup>, Chenchen Wang<sup>2,3</sup>, Wentao Liu<sup>3,4</sup>,<br>
                             Jinwei Gu<sup>1</sup>, Tianfan Xue<sup>1</sup><br> -->
-                            <sup>1</sup>The Chinese University of Hong Kong, <sup>2</sup>Shanghai AI Laboratory,<br>
-                            <sup>3</sup>Tsinghua University, <sup>4</sup>SenseTime
+                            <sup>1</sup>Shanghai AI Laboratory, <sup>2</sup>The Chinese University of Hong Kong
                           </text>
                         </span>
                   </div>
-
+                  <br>
+                  <strong>NeurIPS 2024</strong>
                   <div class="column has-text-centered">
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/2409.17996" target="_blank"
+                        <a href="https://openreview.net/pdf?id=4kVHI2uXRE" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -112,7 +109,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/PhoCoLens" target="_blank"
+                    <a href="https://openreview.net/pdf?id=4kVHI2uXRE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -123,7 +120,7 @@
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2409.17996" target="_blank"
+                  <a href="https://openreview.net/pdf?id=4kVHI2uXRE" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -151,10 +148,8 @@
         <h5 class="title is-3">Abstract</h5>
         <div class="content has-text-justified">
           <p>
-            Lensless cameras offer significant advantages in size, weight, and cost compared to traditional lens-based systems. Without a focusing lens, lensless cameras rely on computational algorithms to recover the scenes
-            from multiplexed measurements. However, current algorithms struggle with inaccurate forward imaging models and insufficient priors to reconstruct high-quality images. 
-            To overcome these limitations, we introduce a novel two-stage approach for consistent and photorealistic lensless image reconstruction. The first stage of our approach ensures data consistency by focusing on accurately reconstructing the low-frequency content with a spatially varying deconvolution method that adjusts to changes in the Point Spread Function (PSF) across the camera's field of view. The second stage enhances photorealism by incorporating a generative prior from pre-trained diffusion models. By conditioning on the low-frequency content retrieved in the first stage, the diffusion model effectively reconstructs the high-frequency details that are typically lost in the lensless imaging process, while also maintaining image fidelity. Our method achieves a superior balance between data fidelity and visual quality compared to existing methods, as demonstrated with two popular lensless systems, PhlatCam and DiffuserCam.
-          </p>
+            Photo finishing tuning aims to automate the manual tuning process of the photo finishing pipeline, like Adobe Lightroom or Darktable. Previous works either use zeroth-order optimization, which is slow when the set of parameters increases, or rely on a differentiable proxy of the target finishing pipeline, which is hard to train.
+            To overcome these challenges, we propose a novel goal-conditioned reinforcement learning framework for efficiently tuning parameters using a goal image as a condition. Unlike previous approaches, our tuning framework does not rely on any proxy and treats the photo finishing pipeline as a black box. Utilizing a trained reinforcement learning policy, it can efficiently find the desired set of parameters within just 10 queries, while optimization based approaches normally take 200 queries. Furthermore, our architecture utilizes a goal image to guide the iterative tuning of pipeline parameters, allowing for flexible conditioning on pixel-aligned target images, style images, or any other visually representable goals. We conduct detailed experiments on photo finishing tuning and photo stylization tuning tasks, demonstrating the advantages of our method.          </p>
         </div>
       </div>
     </div>
@@ -167,11 +162,11 @@
     <div class="hero-body">
       <div class="columns is-centered has-text-centered">
         <div class="column is-three-fifths">
-          <h5 class="title">Comparison of lensless imaging approaches</h5>
-          <img src="static/images/lenssless_teaser.jpg" , width="1500" />
+          <h5 class="title">Motivation</h5>
+          <img src="static/images/teaser.png" , width="1500" />
           <div class="content has-text-justified">
             <p>
-              We introduce PhoCoLens, a lensless reconstruction algorithm that achieves both better visual quality and consistency to the ground truth than existing methods. Our method recovers more details compared to traditional reconstruction algorithms (b) and (c), and also maintains better fidelity to the ground truth compared to the generative approach (d).  
+              In this work, we propose an RL-based photo finishing tuning algorithm that efficiently tunes the parameters of a black-box photo finishing pipeline to match any tuning target. The RL-based solution (top row) takes only about 10 iterations to achieve a similar PSNR as the 500-iteration output of a zeroth-order algorithm (bottom row). Our method demonstrates fast convergence, high quality, and no need for a proxy.            </p>
             </p>
           </div>
       
@@ -186,13 +181,13 @@
     <div class="hero-body">
       <div class="columns is-centered has-text-centered">
         <div class="column is-three-fifths">
-          <h5 class="title">Overview of PhoCoLens Pipeline</h5>
+          <h5 class="title">Overview of our Goal Conditioned Reinforcement Learning Pipeline</h5>
           <div class="content has-text-justified">
-          <img src="static/images/overview.png" , width="1500" />
+          <img src="static/images/method.png" , width="1500" />
             <p>
-
-              The two-stage pipeline begins with a spatially varying deconvolution network mapping lensless measurements to range space. Then a conditional diffusion model for null space recovery refines details using the first stage output, achieving the final reconstruction. 
-            </p>
+              We achieve efficient parameter searching using goal conditioned reinforcement learning. At each iteration, the policy network takes the tuning target and the currently tuned image as input, and finds a better set of parameters.
+              By forming the problem into a Markov decision process and  training the RL policy,  we came to a smart searching algorithm that makes the finishing results closer to the target at each step.
+              With a learned policy, this algorithm can more accurately predict the potential searching direction than zeroth-order searching. And do not rely on a differential proxy.
           </div>
         </div>
       </div>
@@ -205,46 +200,57 @@
         <div class="column is-three-fifths">
           <h5 class="title">Qualitative Results</h5>
           <div class="content has-text-justified">
-          <img src="static/images/app_result3.png" , width="1500" />
+          <img src="static/images/res_fivek.png" , width="1500" />
             <p>
             <div style="text-align: center;">
-              Qualitative comparison between our method and others on the PhlatCam dataset.
+              Qualitative comparison of photo finishing tuning task between our method and others on the MIT-Adobe 5K dataset.
             </p>
           </div>
           <br> 
           <br> 
           <div class="content has-text-justified">
-            <img src="static/images/main_result4.png" , width="1500" />
+            <img src="static/images/res_hdr.png" , width="1500" />
               <p>
                 <div style="text-align: center;">
-                  Qualitative comparison between our method and others on the DiffuserCam dataset.
+            Qualitative comparison of photo finishing tuning task between our method and others on the HDR+ dataset.
               </p>
               </div>
               
+            </div>
+            <br>
+            <br>
+            <div class="content has-text-justified">
+              <img src="static/images/res_style.png" , width="1500" />
+              <p>
+              <div style="text-align: center;">
+                Qualitative comparison between our method and others on the photo stylization tuning task.
+                </p>
+              </div>
+
             </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="hero is-small">
-    <div class="hero-body">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-three-fifths">
-          <h5 class="title">Quantitative Results</h5>
-          <div class="content has-text-justified">
-            <div style="display: flex; justify-content: center;">
-              <img src="static/images/qc.png" , width="700" />
-            </div>
-            <p>
-            <div style="text-align: center;">
-              Quantitative comparison between our method and others on the PhlatCam dataset.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<!--  <section class="hero is-small">-->
+<!--    <div class="hero-body">-->
+<!--      <div class="columns is-centered has-text-centered">-->
+<!--        <div class="column is-three-fifths">-->
+<!--          <h5 class="title">Quantitative Results</h5>-->
+<!--          <div class="content has-text-justified">-->
+<!--            <div style="display: flex; justify-content: center;">-->
+<!--              <img src="static/images/qc.png" , width="700" />-->
+<!--            </div>-->
+<!--            <p>-->
+<!--            <div style="text-align: center;">-->
+<!--              Quantitative comparison between our method and others on the PhlatCam dataset.-->
+<!--            </p>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
 
 
 
@@ -278,11 +284,11 @@
 <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{cai2024phocolens,
-  title={PhoCoLens: Photorealistic and Consistent Reconstruction in Lensless Imaging},
-  author={Cai, Xin and You, Zhiyuan and Zhang, Hailong and Liu, Wentao and Gu, Jinwei and Xue, Tianfan},
-  journal={arXiv preprint arXiv:2409.17996},
-  year={2024}
+      <pre><code>@article{wu2024goal,
+title={Goal Conditioned Reinforcement Learning for Photo Finishing Tuning},
+author={Jiarui Wu and Yujin Wang and Lingen Li and Zhang Fan and Tianfan Xue},
+booktitle={The Thirty-eighth Annual Conference on Neural Information Processing Systems},
+year={2024},
 }</code></pre>
     </div>
 </section> 
