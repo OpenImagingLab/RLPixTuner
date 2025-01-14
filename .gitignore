@@ -1,0 +1,36 @@
+__pycache__/
+**/__pycache__/
+experiments/
+data/
+#yolov3/runs/
+#yolov3/pretrained_models/
+.idea/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+wandb/
+logging/
+.installed.cfg
+*.egg
+
+.DS_Store
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
