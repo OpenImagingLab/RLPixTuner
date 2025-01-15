@@ -1,9 +1,10 @@
 # Goal Conditioned Reinforcement Learning for Photo Finishing Tuning
 
-
 **NeurIPS 2024**
 
 [Project Page](https://openimaginglab.github.io/RLPixTuner/) | [Video](https://www.youtube.com/watch?v=fFIkc3KHS28)
+
+![img](https://openimaginglab.github.io/RLPixTuner/static/images/teaser.png)
 
 
 ## Installation
@@ -39,4 +40,4 @@ For collaboration or inquiries, please contact us.
 
 ## Acknowledgement
 
-This code is heavyly based on the [StableBaseline3](https://stable-baselines3.readthedocs.io/en/master/index.html).
+This code is based on the [StableBaseline3](https://stable-baselines3.readthedocs.io/en/master/index.html).
