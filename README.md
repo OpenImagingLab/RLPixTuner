@@ -1,12 +1,6 @@
 # Goal Conditioned Reinforcement Learning for Photo Finishing Tuning
 
 
-[Jiarui Wu](https://gnwekge78707.github.io/), 
-Yujin Wnag, 
-Lingen Li, 
-Zhang Fan, 
-[Tianfan Xue](https://tianfan.info)
-
 **NeurIPS 2024**
 
 [Project Page](https://openimaginglab.github.io/RLPixTuner/) | [Video](https://www.youtube.com/watch?v=fFIkc3KHS28)
