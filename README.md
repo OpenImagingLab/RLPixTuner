@@ -9,7 +9,7 @@
 
 ## Installation
 ```
-pip install -r requirements.txt
+conda create --name <env> --file requirements.txt
 ```
 
 ## Run
