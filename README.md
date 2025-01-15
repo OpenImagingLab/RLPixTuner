@@ -13,6 +13,17 @@ pip install -r requirements.txt
 ```
 
 ## Run
+
+prepare the input-target data pair like:
+
+```
+├─ExpertC0001-0-Best-Input.tif
+└─ExpertC0001-0-Best-Target.tif
+...
+```
+
+add the data path into `bash/run.sh`.
+
 ```
 bash bash/run.sh
 ```
