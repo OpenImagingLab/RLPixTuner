@@ -54,7 +54,7 @@ After downloading the data, run:
 python tools/process_data.py /path/to/your/dataset/directory
 ```
 
-#### Model
+### Model
 
 The pretrained weight for photo finishing tuning comes with our repo:
 
