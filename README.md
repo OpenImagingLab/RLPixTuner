@@ -21,7 +21,7 @@ In this work, we propose an RL-based photo finishing tuning algorithm that effic
 
 Tested with python 3.9.
 
-#### Environment
+### Environment
 
 Clone our repo:
 
@@ -36,9 +36,9 @@ Install dependencies:
 conda create --name <env> --file requirements.txt
 ```
 
-#### Data
+### Data
 
-Prepare the input-target data pair like:
+Prepare the input-target data pairs like:
 
 ```
 ├─ExpertC0001-0-Best-Input.tif
@@ -46,7 +46,7 @@ Prepare the input-target data pair like:
 ...
 ```
 
-Here is the an example (subset) of the [FiveK-Random Evaluation Data](https://github.com/apple/ml-mgie/blob/main/_data) we used in our paper.
+Here is the an example (subset) of the [FiveK-Random Evaluation Data](https://drive.google.com/file/d/1LgaaLnVm1MXrDTlFAMzka6_PbdqwR1yE/view?usp=sharing) we used in our paper.
 
 After downloading the data, run:
 
@@ -66,7 +66,7 @@ envs/checkpoints/best_model.zip
 
 This repo currently contains implementation for photo finishing tuning task in our paper.
 
-#### Inference
+### Inference
 
 Specify the eval data path and model weight in `bash/run.sh`. Then run:
 
@@ -74,7 +74,7 @@ Specify the eval data path and model weight in `bash/run.sh`. Then run:
 bash bash/run.sh
 ```
 
-#### Train
+### Train
 
 Specify the training data path in `bash/train.sh`. Then run:
 
