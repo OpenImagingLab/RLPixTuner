@@ -74,14 +74,6 @@ Specify the eval data path and model weight in `bash/run.sh`. Then run:
 bash bash/run.sh
 ```
 
-### Train
-
-Specify the training data path in `bash/train.sh`. Then run:
-
-```
-bash bash/train.sh
-```
-
 ## Citation
 
 If you use our work in your research, please use the following BibTeX entry.
