@@ -69,18 +69,20 @@ This repo currently contains implementation for photo finishing tuning task in o
 ### Inference
 
 **Photo Finishing Tuning**
+
 Specify the eval data path and model weight in `bash/run_pft.sh`. Then run:
 ```
 bash bash/run_pft.sh
 ```
 
 **Photo Stylization Tuning**
+
 Specify the eval data path and model weight in `bash/run_pst.sh`. Then run:
 ```
 bash bash/run_pst.sh
 ```
 
-### Inference
+### Train
 
 Specify the training data path in `bash/train.sh`. Then run:
 ```
