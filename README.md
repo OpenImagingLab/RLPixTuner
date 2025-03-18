@@ -68,11 +68,25 @@ This repo currently contains implementation for photo finishing tuning task in o
 
 ### Inference
 
-Specify the eval data path and model weight in `bash/run.sh`. Then run:
+**Photo Finishing Tuning**
+Specify the eval data path and model weight in `bash/run_pft.sh`. Then run:
+```
+bash bash/run_pft.sh
+```
 
+**Photo Stylization Tuning**
+Specify the eval data path and model weight in `bash/run_pst.sh`. Then run:
 ```
-bash bash/run.sh
+bash bash/run_pst.sh
 ```
+
+### Inference
+
+Specify the training data path in `bash/train.sh`. Then run:
+```
+bash bash/train.sh
+```
+We recommand tuning these hyper-parameters first: `agent_lr, value_lr, replay_size, ddpg_gamma, ema_rate`.
 
 ## Citation
 
